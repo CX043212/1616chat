@@ -1,0 +1,85 @@
+<html >
+<head>
+    <meta charset="UTF-8">
+    <style>
+        html,body{
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+        }
+        .top{
+            position: relative;
+            height: calc(100% - 35px);
+            width: 100%;
+            overflow: hidden
+        }
+
+        #image{
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        img:hover{
+            cursor: pointer;
+        }
+        .bot{
+            width:100%;
+            height: 35px;
+            position: fixed;
+            bottom: 0px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="overflow: hidden;position: relative">
+<div class="top" >
+    <img id="image">
+</div>
+
+<div class="bot">
+    <img src="./big.png" id="big">
+    <img src="./small.png" id="small">
+</div>
+</body>
+<script>
+    var image = document.getElementById('image');
+    var {ipcRenderer} =  require('electron');
+    //接受主进程传过来的图片地址
+    ipcRenderer.on('imgUrl',(event,arg) => {
+        console.log('arg====',arg);
+        image.setAttribute('src',arg)
+    })
+
+    //点击放大
+    var btn1 = document.getElementById('big');
+    btn1.addEventListener('click',big,false);
+    function big() {
+        image.width = image.width * 1.05;
+        image.height = image.height * 1.05;
+    }
+    //点击缩小
+    var btn2 = document.getElementById('small');
+    btn2.addEventListener('click',small,false);
+
+    function small() {
+        image.width = image.width * 0.95;
+        image.height = image.height * 0.95;
+
+    }
+
+    image.addEventListener('mousewheel',mouseWheelhandler,false);
+    //鼠标滑轮滚动缩放图片
+    function mouseWheelhandler(e){
+        image.style.cursor='pointer'
+        if(e.wheelDelta == 120){
+           big();
+        }else{
+           small();
+        }
+    }
+
+</script>
+</html>

@@ -1,0 +1,9 @@
+version: 2.4.3
+files:
+  - url: 16Chat_Setup_2.4.3_win.exe
+    sha512: /fyir47QRDzHADFTxmjea2fZLD01N1U0nfeO65rx/E9m8h7pWobreHnlLbcG9NsYrxOAaPMcgjl4fbozLgPxgw==
+    size: 37347537
+path: 16Chat_Setup_2.4.3_win.exe
+sha512: /fyir47QRDzHADFTxmjea2fZLD01N1U0nfeO65rx/E9m8h7pWobreHnlLbcG9NsYrxOAaPMcgjl4fbozLgPxgw==
+sha2: 8a980afbe203600d9460ea5a9dac5a0367df6c653aff76967de712dbd51c88fc
+releaseDate: '2019-07-31T02:10:51.174Z'

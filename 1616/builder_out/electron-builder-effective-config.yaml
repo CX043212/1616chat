@@ -1,0 +1,24 @@
+directories:
+  output: builder_out
+  buildResources: build
+appId: com.1818lao.im
+productName: 一路聊
+copyright: 深圳一路捞互联网有限公司版权所有 © 2018
+files:
+  - from: ./
+    filter:
+      - '**/*'
+      - '!dist/'
+      - '!OutApp/'
+      - '!.svn/'
+win:
+  target: nsis
+  icon: icon_256.png
+  publisherName: 深圳一路捞互联网有限公司
+nsis:
+  artifactName: '16Chat_Setup_${version}_${os}_${arch}.${ext}'
+  uninstallDisplayName: 一路聊
+publish:
+  - provider: generic
+    url: 'http://123.206.49.23/auto-update/'
+electronVersion: 1.8.8

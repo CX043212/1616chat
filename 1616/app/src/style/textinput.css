@@ -1,0 +1,268 @@
+.text {
+    height: 160px;
+    border-top: solid 1px #ddd;
+}
+.xf_config{
+    height:30px;
+    position:relative;
+}
+.xf_config ul{
+    float:left;
+}
+.xf_config ul li{
+    float:left;
+    padding:5px 10px;
+    margin-left:20px;
+    line-height:20px;
+}
+.xf_config ul li img{
+   vertical-align: middle;
+}
+.xf_face{
+    position:absolute;
+    top:-72px;
+    left:3px;
+    border: 1px solid #ccc;
+    width: 274px;
+    padding: 3px;
+    z-index:10;
+    box-shadow: 1px 1px 2px;
+    background:#fff;
+}
+.xf_face>a{
+    margin-left:2px;
+}
+.text textarea {
+    padding: 10px;
+    height:calc(100% - 30px);
+    width: 100%;
+    border: none;
+    outline: none;
+    font-family: "Micrsofot Yahei";
+    resize: none;
+}
+.xf_send{
+    position:absolute;
+    right:25px;
+    bottom:4px;
+    padding:2px 5px;
+    cursor:pointer;
+    border-radius:3px;
+    background:#fff;
+    min-width:60px;
+    text-align: center;
+}
+.xf_send:hover{
+    background:#58B7FF;
+    color:#fff;
+}
+.product{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 40;
+}
+.product_body{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    width:422px;
+    background: #fff;
+}
+
+   /* 产品链接样式 */
+   .customs{
+	width:400px;
+	height: 80px;
+	position: relative;
+    display: block;
+    white-space: normal;
+    word-wrap: normal;
+    font-size: 20px;
+    margin: 10px 10px 0 10px;
+}
+.custom_pics{
+	display: block;
+	width:80px;
+	height: 80px;
+	position: absolute;
+	top:0px;
+    left:0px;
+}
+.custom_pics>img{
+	width:80px;
+	height: 80px;
+	vertical-align: bottom;
+}
+.custom_descs{
+	display: block;
+	margin-left:90px;
+    padding-top:10px;
+    font-family: "微软雅黑";
+    font-size: 16px;
+}
+.custom_descs>a{
+	display: block;
+	margin-bottom: 10px;
+	text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 20px;
+}
+.custom_descs>em{
+	color:red;
+}
+.isMakeSure{
+    text-align: right;
+    margin-top:20px;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+.btn{
+    padding: 10px 22px;
+    border-radius: 8px;
+    margin-right: 20px;
+    line-height: 37px;
+    border: 1px solid #999999;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+.btn:hover{
+    background: #2799ea;
+}
+
+/* 截图选项 */
+.xf_config .screenshot-box{
+    position: relative;
+    padding: 0;
+}
+.screenshot-box span.screenShot-btn{
+    display: block;
+    /* padding: 5px 10px; */
+}
+.screenshot-box span.screenShot-btn::after{
+    position: absolute;
+    right: -1px;
+    top: 50%;
+    content: '';
+    width: 0;
+    height: 0;
+    border-color: #999 transparent;
+    border-style: solid;
+    border-width: 5px 4px 0;
+    transform: translateY(-50%);
+}
+.screenshot-box span.screenShot-btn.active::after{
+    position: absolute;
+    right: -1px;
+    top: 50%;
+    content: '';
+    width: 0;
+    height: 0;
+    border-color: #999 transparent;
+    border-style: solid;
+    border-width: 0 4px 5px;
+    transform: translateY(-50%);
+}
+.screenshot-setting{
+    position: absolute;
+    left: 0;
+    top: 30px;
+    background-color: #fff;
+    margin: 0;
+    width: 120px;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, .1);
+    overflow: hidden;
+}
+.screenshot-setting dd{
+    margin: 0;
+    padding-left: 14px;
+    border: 1px solid #ddd;
+    white-space: nowrap;
+    line-height: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.screenshot-setting dd:last-child{
+    border-top: 0;
+}
+.screenshot-setting dd:hover{
+    color: #fff;
+    border-color: #2799ea;
+    background-color: #2799ea;
+}
+
+.evalute{
+    display:flex;
+    justify-content:space-between;
+    padding: 10px 10px 0 5px;
+}
+.ivu-btn, .ivu-btn:active, .ivu-btn:focus{
+    padding: 0px 15px 0px !important;
+}
+.very{
+    width: 61px;
+    height: 26px;
+    padding: 6px 16px;
+    border:1px solid rgb(161, 161, 161);
+    border-radius: 6px;
+    color: #515151;
+    text-align: center;
+    line-height:26px;
+    cursor:pointer;
+    margin-right:20px;
+}
+.evalute>ul{
+    display:flex;
+    align-content: space-around;
+}
+.evalute>ul>li{
+ padding:8px;
+}
+
+.ivu-modal-content{
+    width:338px !important;
+    height:190px !important;
+}
+.very-active{
+    color:rgb(0, 51, 255);
+    border:1px solid rgb(0, 51, 255);
+}
+.problem{
+    display:flex;
+    margin-top:10px;
+    justify-content:flex-start;
+    align-items:center;
+}
+.problem>.title{
+    margin-right:6px;
+    margin-left:15px;
+}
+.prob{
+    border:1px solid rgb(161, 161, 161);
+    border-radius: 25px;
+    margin-right:20px;
+    cursor:pointer;
+    padding:2px;
+}
+.pro-active{
+    color:rgb(0, 102, 255);
+    border:1px solid rgb(0, 102, 255);
+}
+.evabtn{
+    color:#2d8cf0 !important;
+    border-color: #2d8cf0 !important;
+    background: #fff !important;
+}
+.noSel{
+    display:none;
+    margin-top:10px;
+    margin-left:5px;
+}
