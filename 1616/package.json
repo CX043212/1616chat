@@ -51,7 +51,7 @@
     ]
   },
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.21.1",
     "clean-webpack-plugin": "^3.0.0",
     "cos-nodejs-sdk-v5": "^2.0.6",
     "electron-squirrel-startup": "^1.0.0",
